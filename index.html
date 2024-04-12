@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #0056b3;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .info {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="info">
+        Бадретдинова Айзиля Мунировна<br>
+        СПБ22-1Б-БИ04(1)
+    </div>
+    <h1>Кафедра Бизнес-информатика</h1>
+    <hr>
+    <h2>Научно-исследовательская работа по базам данных "Ресторан"</h2>
+    <h3>ГЛАВНОЕ МЕНЮ</h3>
+
+    <div class="menu">
+        <a href="http://localhost/my_restaurant/create.php">Создать таблицу данных</a>
+        <a href="http://localhost/my_restaurant/append.php">Добавить данные в таблицу menu_items (фоновый режим)</a>
+        <a href="http://localhost/my_restaurant/view.php">Посмотреть все данные в таблицах</a>
+        <a href="http://localhost/my_restaurant/verif.php">Проверить наличие данных в таблице menu_items</a>
+        <a href="http://localhost/my_restaurant/add_menu_item.php">Добавление новых записей в таблицу menu_items прямо из формы</a>
+        <a href="http://localhost/my_restaurant/add_traffic_payment.php">Просмотр данных из таблицы traffic_payment и работа с ними</a>
+    </div>
+
+    <img src="https://i.pinimg.com/originals/f4/01/26/f40126aa586f66ffeb75b4e183e3fe8f.gif" width="350" height="150" alt="Логотип">
+</div>
+</body>
+</html>
+
+
