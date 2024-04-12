@@ -1,0 +1,345 @@
+﻿/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex; /* Используем flexbox для расположения элементов в ряд */
+    justify-content: space-between; /* Равномерно распределяем пространство между элементами */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+h1 {
+    display: inline-block; /* Размещаем элементы в одну строку */
+    margin: 0;
+}
+
+#cartButton {
+    display: inline-block; /* Размещаем элементы в одну строку */
+    margin: 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.right-aligned {
+    float: right;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.right-aligned:hover {
+    background-color: #0056b3;
+}
+
+
+.hits-link strong {
+    font-weight: bold;
+    color: purple;
+}
+
+#cartItems {
+    list-style: none;
+    padding: 0;
+}
+
+#totalPrice {
+    margin-top: 10px;
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.addToCart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.addToCart:hover {
+    background-color: #0056b3;
+}
+
+
+.cart {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-nav {
+    float: right; /* Размещаем элемент справа */
+    margin-top: 10px; /* Добавляем отступ сверху */
+}
+
+.cart h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.cart #cartItems {
+    list-style: none;
+    padding: 0;
+}
+
+.cart #cartItems li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cartItems li:last-child {
+    border-bottom: none;
+}
+
+.cart #totalPrice {
+    margin-top: 10px;
+}
+
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Цвет фона футера */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание по центру */
+    padding: 20px; /* Внутренние отступы сверху и снизу */
+}
+
+.footer-content {
+    max-width: 1200px; /* Ширина контента футера */
+    margin: 0 auto; /* Центрирование контента */
+}
+
+#cart {
+   background-color: #f2f2f2;
+   border: 1px solid #ddd;
+   padding: 20px;
+   border-radius: 8px;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+   margin-top: 0;
+   font-size: 24px;
+   color: #333;
+}
+
+#cartItems {
+   list-style-type: none;
+   padding: 0;
+}
+
+#cartItems li {
+   margin-bottom: 10px;
+   padding: 10px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#cartItems li button {
+   background-color: #e74c3c;
+   color: white;
+   border: none;
+   padding: 8px 12px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+#cartItems li button:hover {
+   background-color: #c0392b;
+}
+
+#totalPrice {
+   font-size: 18px;
+   margin-top: 20px;
+}
+
+.remove-item {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #d32f2f;
+}
+
+.clearButton {
+   background-color: red;
+   color: white;
+   border: none;
+   padding: 12px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+   margin-top: 20px;
+}
+
+.clearButton:hover {
+   background-color: #219d53;
+}
+
+
+.clearButton:active {
+   background-color: #1d8347;
+   transform: translateY(1px);
+}
+
+/* Стили для кнопки оформления заказа */
+.checkoutButton {
+   background-color: green;
+   color: white;
+   border: none;
+   padding: 12px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+   margin-top: 20px;
+}
+
+.checkoutButton:hover {
+   background-color: #219d53;
+}
+
+.checkoutButton:active {
+   background-color: #1d8347;
+   transform: translateY(1px);
+}
+
+#cartToggleButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#cartToggleButton:hover {
+    background-color: #0056b3;
+}
+
